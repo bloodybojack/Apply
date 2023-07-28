@@ -1,0 +1,36 @@
+.date {
+    border: 1px solid white;
+    padding: 1.5rem;
+    padding-top: .25rem;
+    width: 75%;
+    max-width: 1500px;
+    margin: 0px auto;
+    z-index: 1;
+}
+
+.date #time {
+    display: flex;
+    width: fit-content;
+    padding: .5rem 1rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 100;
+    margin: 1rem 0px;
+    border: 1px solid white;
+    border-radius: 1rem;
+    /* box-shadow: 1px 1px 5px black; */
+    transition: background-color .2s;
+}
+.date #time:hover {
+    background-color: #653a70;
+    transition: background-color .2s;
+}
+
+.date #time h1 {
+    display: inline;
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 0px .25rem;
+}
+
+.date #time #relative {
+}

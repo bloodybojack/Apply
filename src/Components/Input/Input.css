@@ -1,0 +1,218 @@
+#inputContainer {
+    width: 75%;
+    max-width: 1500px;
+    overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1f1f1f;
+}
+
+#input #btnBox {
+    display: flex;
+    width: 75%;
+    margin: 1rem auto;
+    justify-content: space-between;
+  }
+  
+  #input button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 4rem;
+    font-family: 'Lora';
+    background-color: transparent;
+    border-radius: 10rem;
+    color: white;
+    border: 1px solid white;
+    transition: background-color .35s;
+  }
+  
+  #input #cancel:hover {
+    background-color: red;
+    transition: background-color .35s, width .35s;;
+  }
+  
+  #input #confirm:hover {
+    background-color: green;
+    transition: background-color .35s;
+  }
+  
+
+#inputbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    max-height: 920px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: black;
+    padding: 1.5rem;
+    transition: border .35s;
+}
+
+#inputbox:hover {
+}
+
+#inputbox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: white;
+    font-size: 1.25rem;
+}
+
+#inputbox form input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: .5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 1rem 0px;
+    transition: border .35s;
+}
+#inputbox form input:focus-within {
+    border: 1px solid rebeccapurple;
+    transition: border .35s;
+}
+
+
+
+
+
+
+#inputbox .boxInput {
+    display: flex;
+    flex-direction: column;
+}
+#inputbox .boxInput textarea {
+    margin: .75rem 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: 0px solid white;
+    border-radius: .5rem;
+    transition: border .35s;
+}
+#inputbox .boxInput textarea:focus-within {
+    border: 1px solid rebeccapurple;
+    transition: border .35s;
+}
+
+#inputbox #small_dets {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0px;
+}
+
+#inputbox #small_dets label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+}
+
+
+#inputbox #small_dets label input {
+    margin-top: .75rem;
+    width: 100%;
+}
+
+#inputbox #small_dets #type_dropdown {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: .5rem;
+}
+
+#inputbox #small_dets #type_dropdown input {
+
+}
+
+#inputbox #small_dets #type_dropdown button {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: .5rem;
+    padding: .25rem 0px;
+    text-align: left;
+    padding-left: .5rem;
+    color: grey;
+}
+
+#inputbox #small_dets #type_dropdown ul {
+    display: none;
+    position: absolute;
+    margin-top: 0rem;
+    width: 35%;
+    min-width: 6rem;
+    padding: 0px;
+    border-radius: .5rem;
+    z-index: 1;
+    box-shadow: 4px 3px 6px rgba(0, 0, 0, .45);
+}
+
+#inputbox #small_dets #type_dropdown ul li {
+    font-size: 1rem;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#inputbox #small_dets #type_dropdown ul li button {
+    border-radius: 0px;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+    border: 0px; 
+    border-bottom: 1px solid black;
+}
+#inputbox #small_dets #type_dropdown ul li button:hover {
+    background-color: rebeccapurple;
+}
+
+#inputbox #small_dets #type_dropdown #dropdown_menu {
+    animation: fade .25s 1;
+    transition: opacity .3s;
+}
+
+#inputbox #title_source {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr;
+}
+
+#inputbox #title_source label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+#inputbox #title_source input {
+}
+
+@keyframes fade {
+    0% { 
+        opacity: 0;
+        margin-top: 1rem;
+    }
+    100% { 
+        opacity: 1;
+        margin-top: 0rem; 
+    }
+}

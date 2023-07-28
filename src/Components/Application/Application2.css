@@ -1,0 +1,143 @@
+#application {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 2rem;
+    padding: 1rem 0px;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+#application header {
+    text-align: left;
+    margin: 0px 1rem;
+}
+
+#application header h1 {
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 0px;
+}
+
+#application header p {
+    margin: 0px .25rem;
+    font-weight: 200;
+}
+
+#application header h3 {
+    padding: 0px;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+    margin: 1.5rem 0px;
+}
+
+#quick_dets {
+    display: flex;
+    margin: .5rem 0px;
+    width: max-content;
+    padding: .1rem .5rem;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    /* box-shadow: inset 0px 1px 3px black; */
+}
+
+#application #quick_dets p {
+    font-weight: 300;
+}
+#application #quick_dets p::before {
+    content: '◼ ';
+}
+
+
+#application section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    letter-spacing: 0rem;
+    line-height: 1.35rem;
+    font-weight: 100;
+}
+
+#application section h3 {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    max-width: 320px;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    /* box-shadow: inset 0px 1px 3px black; */
+    transition: background-color .35s;
+}
+
+@media only screen and (max-width: 1000px) {
+    #application section {
+        grid-template-columns: 1fr;
+    }
+}
+
+#application section h3:hover {
+}
+
+#application section h3::before {
+    /* content: '※ '; */
+}
+
+#application section h3::after {
+    /* content: ' ※'; */
+}
+
+#application section li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin: 1rem;
+    padding: .5rem;
+    list-style-type: '×  ';
+    /* box-shadow: inset 0px 3px 10px rgba(0, 0, 0, .5); */
+    /* background-color: rgba(0, 0, 0, .1); */
+    transition: background-color .25s;
+}
+
+#application section li:hover {
+    background-color: #fce300;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: background-color .25s;
+}
+
+#title_edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#settingsBtn {
+    font-size: 2rem;
+    font-weight: 100;
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: white;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    margin: 0px 1rem;
+    opacity: .3;
+    transition: opacity .35s, border .5s;
+}
+#settingsBtn:hover {
+    opacity: 1;
+    border: 1px red solid;
+    transition: opacity .35s, border .5s;
+}
